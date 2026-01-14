@@ -1,13 +1,13 @@
-# 🚗 Suspension Ride Quality Analysis Using MATLAB
+#  Suspension Ride Quality Analysis Using MATLAB
 
-## 📌 Project Overview
+##  Project Overview
 This project presents a comprehensive quantitative analysis of vehicle suspension ride quality using experimentally measured position and acceleration data. The objective is to evaluate how suspension response and perceived ride comfort vary under low-frequency and high-frequency excitation conditions using MATLAB.
 
 This work was originally completed as an **assignment project** for the course **“Practical MATLAB Skills” by MathWorks (Coursera)**. While the core analysis follows the project outline and requirements specified in the course, the study was **significantly extended beyond the assignment scope** through additional metrics, visualizations, and engineering interpretation to demonstrate deeper technical understanding and independent analytical effort.
 
 ---
 
-## 🎓 Academic Context and Original Contribution
+##  Academic Context and Original Contribution
 
 ### Course Context
 - **Course:** Practical MATLAB Skills  
@@ -30,7 +30,7 @@ These additions reflect **independent problem-solving, critical thinking, and pr
 
 ---
 
-## 🧪 Experimental Setup
+## Experimental Setup
 The experimental system consists of a vehicle suspension assembly mounted on vertically actuated platforms. The platforms undergo sinusoidal motion while sensor data are recorded at a fixed reference point on the suspension.
 
 Two sensors are used:
@@ -47,7 +47,7 @@ The experiment runs for **30 seconds**, divided into three phases:
 
 ---
 
-## 🧾 Data Import and Preprocessing
+## Data Import and Preprocessing
 Raw sensor outputs were provided as voltage measurements and imported into MATLAB as column vectors. To ensure reproducibility and clean execution, the data were stored in a `.mat` file and reloaded within a structured MATLAB Live Script.
 
 Sensor voltages were converted into physically meaningful quantities using provided calibration relationships:
@@ -58,7 +58,7 @@ Sensor offsets were removed prior to scaling to ensure accurate zero-reference m
 
 ---
 
-## ✂️ Test Segmentation
+##  Test Segmentation
 To focus on dynamic behavior, only the active excitation intervals were extracted:
 - Low-frequency response (0.5 Hz)  
 - High-frequency response (5 Hz)  
@@ -67,7 +67,7 @@ A dedicated test-time vector (0–10 s) was constructed to ensure consistent ali
 
 ---
 
-## 📈 Time-Domain Response Analysis
+## Time-Domain Response Analysis
 Position and acceleration responses were visualized for both excitation frequencies to assess qualitative suspension behavior.
 
 Key observations:
@@ -78,7 +78,7 @@ These observations motivated further quantitative analysis.
 
 ---
 
-## 📊 Quantitative Performance Metrics
+## Quantitative Performance Metrics
 
 ### Required Coursework Analysis
 As specified in the course outline, the following metrics were computed:
@@ -97,7 +97,7 @@ These metrics enable a more complete assessment of both sustained ride comfort a
 
 ---
 
-## 📉 Comparative Visualization
+## Comparative Visualization
 Multiple visualization techniques were employed to support engineering interpretation:
 - Overlaid time-domain plots  
 - Aligned subplots for position and acceleration comparison  
@@ -107,12 +107,12 @@ These visualizations emphasize design-oriented insight rather than raw signal in
 
 ---
 
-## 🧠 Engineering Interpretation
+## Engineering Interpretation
 The analysis shows that suspension acceleration increases sharply with excitation frequency despite a reduction in displacement. This behavior is consistent with vibration principles, where acceleration is strongly influenced by excitation frequency. Consequently, high-frequency inputs generate disproportionately larger inertial forces, leading to increased ride harshness.
 
 ---
 
-## 🧩 Conclusions and Engineering Takeaways
+## Conclusions and Engineering Takeaways
 - Low-frequency excitation results in larger suspension motion but relatively mild acceleration levels  
 - High-frequency excitation significantly amplifies acceleration response while reducing displacement  
 - Ride discomfort is governed primarily by acceleration rather than visible suspension motion  
@@ -121,14 +121,9 @@ The analysis shows that suspension acceleration increases sharply with excitatio
 
 ---
 
-## 🧰 Tools and Technologies
+## Tools and Technologies
 - MATLAB (Live Scripts)  
 - Time-domain signal processing  
 - Statistical performance analysis  
 - Engineering data visualization  
 
----
-
-## 📁 Repository Structure
-# MATLAB-Project-1-Suspension-Ride-Quality-Analysis
-An engineering analysis of suspension ride quality using experimental data, conducted in MATLAB and extended beyond coursework requirements for deeper technical insight.
